@@ -4,7 +4,9 @@
   "description": "react component",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint ./src --ext '.js,.jsx' --fix",
+    "doc": "jsdoc src/*.js -d ./doc/developer"
   },
   "repository": {
     "type": "git",
@@ -20,13 +22,20 @@
   },
   "homepage": "https://github.com/zhangwei001/rc#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jsdoc": "^3.6.3",
+    "rollup": "^1.23.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.0"
   }
 }

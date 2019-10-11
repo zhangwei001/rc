@@ -20,8 +20,17 @@ module.exports = {
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "react-hooks"
     ],
     "rules": {
+      "semi": ['off', 'always'],
+      "quotes": ["off", "double"],
+      "arrow-parents": ['off'],
+      "comma-dangle": ['off'],
+      "react/prop-types": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react-hooks/rules-of-hooks": [1, { "extensions": [".js", ".jsx"] }],
+      "react-hooks/exhaustive-deps": [0, { "extensions": [".js", ".jsx"] }]
     }
 };
