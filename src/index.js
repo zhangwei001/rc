@@ -6,7 +6,7 @@
 const deepCopy = (p, c) => {
   const o = c || {}
 
-  Object.keys((p || {})).forEach(i => {
+  Object.keys((p || {})).forEach((i) => {
     if (!!p[i] && typeof p[i] === "object") {
       o[i] = p[i].constructor === Array ? [] : {}
       o[i] = deepCopy(p[i], o[i])
@@ -14,7 +14,6 @@ const deepCopy = (p, c) => {
       o[i] = p[i]
     }
   })
-
   return o
 }
 

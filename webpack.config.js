@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './bulid/index.js',
+  entry: './index.js',
   output: {
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'lib'),
