@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 /**
  * 深copy对象
  * @param {Object} p 要copy的对象
@@ -18,6 +16,7 @@ const deepCopy = (p, c) => {
       o[i] = p[i];
     }
   });
+
   return o
 };
 
@@ -26,11 +25,8 @@ const deepCopy = (p, c) => {
  * @param {Object} obj 要取值的对象
  * @param {String} path 取值路径，例如path=a.b.c，则取值obj.a.b.c
  */
-const safeGet = (obj, path) => `${path}`.split(".").reduce((ret, el) => (ret || {})[el], deepCopy(obj));
+function safeGet(obj, path) {
+  return `${path}`.split(".").reduce((ret, el) => (ret || {})[el], deepCopy(obj))
+}
 
-var index = {
-  safeGet
-};
-
-exports.default = index;
-exports.safeGet = safeGet;
+module.exports = safeGet;

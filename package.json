@@ -8,8 +8,7 @@
     "webpack": "webpack --config webpack.config.js",
     "lint": "eslint src/*.js",
     "doc": "jsdoc src/*.js -d ./docs/developer",
-    "codecov": "codecov",
-    "test": "jest"
+    "codecov": "codecov"
   },
   "repository": {
     "type": "git",
