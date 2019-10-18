@@ -44,7 +44,7 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^1.0.0-rc.13",
-    "jest": "^23.5.0",
+    "jest": "^23.6.0",
     "jsdoc": "^3.6.3",
     "loader-runner": "^3.0.0",
     "rollup": "^1.23.1",
